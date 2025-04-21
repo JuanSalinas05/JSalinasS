@@ -1,0 +1,31 @@
+Estimación de Complejidad de las Operaciones - Proyecto Pizzería
+
+Estructura utilizada: Heap Binario (implementado con lista dinámica)
+
+1. Agregar un pedido al heap (add):
+   - Complejidad: O(log n)
+   - Justificación: El nuevo elemento se agrega al final y luego se ajusta la posición mediante el proceso de "sift up".
+
+2. Consultar el siguiente pedido sin remover (peek):
+   - Complejidad: O(1)
+   - Justificación: Se retorna la raíz del heap, que está en la primera posición.
+
+3. Atender o despachar un pedido (poll):
+   - Complejidad: O(log n)
+   - Justificación: Se remueve la raíz (elemento máximo o mínimo), se reacomoda el último nodo en la raíz y luego se aplica "sift down".
+
+4. Verificar si el heap está vacío (isEmpty):
+   - Complejidad: O(1)
+   - Justificación: Solo se verifica si la estructura tiene elementos.
+
+5. Obtener el número de elementos (size):
+   - Complejidad: O(1)
+   - Justificación: Se mantiene un contador o se usa el tamaño de la lista.
+
+6. Listar todos los elementos para impresión:
+   - Complejidad: O(n)
+   - Justificación: Se recorre toda la lista de elementos.
+
+Resumen:
+- Operaciones principales como insertar y eliminar son O(log n), propias del comportamiento de un heap binario.
+- Operaciones de consulta o verificación son O(1).
